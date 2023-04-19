@@ -1,0 +1,444 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+/* ------------------------INDEX---------------------- */
+/* -----------------------HEADER--------------*/
+header img {
+    height: 150px;
+}
+header{
+    background-color: rgb( 227,227,227 );
+}
+.logo-titulo {
+    display: flex;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+.logo-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.titulo-principal {
+    font-size: 30px;
+    color: #891519;
+    text-align: center;
+}
+.titulo-arriba {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu a {
+    color: black;
+    text-decoration: none;
+}
+/* -----------------------MAIN--------------------- */
+.titulo-secundario {
+    background-image: url(https://static.wixstatic.com/media/8a3e6d_0b1e2bf057fa4d78a69db402aa6a7846.jpg/v1/fill/w_1903,h_889,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8a3e6d_0b1e2bf057fa4d78a69db402aa6a7846.jpg);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 40px;
+    background-repeat: no-repeat;
+    background-position: relative;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.servicios-index {
+
+    display: flex;
+    justify-content: center;
+    background-color: rgb( 206,32,38 );
+    color: white;
+    align-items: center;
+
+}
+.titulo-mecanica {
+    font-size: 20px;
+
+}
+.titulo-mecanica-index {
+    display: flex;
+    flex-direction: column;
+
+}
+.titulo-accesorios {
+    font-size: 20px;
+}
+.titulo-accesorios-index {
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);
+    margin: 20px;
+    padding: 20px;
+
+}
+.titulo-reparacion {
+    font-size: 20px;
+}
+.titulo-reparacion-index {
+    display: flex;
+    flex-direction: column;
+}
+.ven-visitanos {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    height: 350px;
+}
+.ven-visitanos img {
+    width: 250px;
+    height: 200px;
+    margin: 80px;
+
+}
+.visitanos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.visitanos p {
+    max-width: 300px;
+}
+.que-ofrecemos-principal {
+    background-color:rgb( 227,227,227 );
+    ;
+}
+.titulo-te-ofrecemos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 120px;
+    justify-content: space-evenly;
+    max-width: 500px;
+    padding-left: 600px;
+}
+.titulo-te-ofrecemos h3{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.que-ofrecemos{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+}
+.que-ofrecemos img{
+    width: 50px;
+    height: 50px;
+}
+.ubicacion{
+    display: flex;
+    max-width: 300px;
+    flex-direction: column;
+    align-items: center;
+}
+.ubicacion span{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.ubicacion p{
+    max-width: 200px;
+    text-align: center;
+}
+.pesos{
+    display: flex;
+    max-width: 300px;
+    flex-direction: column;
+    align-items: center;
+}
+.pesos span{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.pesos p{
+    max-width: 200px;
+    text-align: center;
+}
+.estrella{
+    display: flex;
+    max-width: 300px;
+    flex-direction: column;
+    align-items: center;
+}
+.estrella span{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.estrella p{
+    max-width: 200px;
+    text-align: center;
+}
+.marcas-calidad {
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.marcas-calidad h3{
+    font-size: 25px;
+}
+.marcas-calidad img{
+    padding-top: 40px;
+}
+.antes-de-footer {
+    background-color: #4c4c4c;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.footer1{
+    padding-top: 50px;
+    display: flex;
+    max-width: 250px;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 40px;
+}
+.footer1-experiencia{
+    padding-bottom: 30px;
+}
+.footer2{
+    padding-top: 50px;
+    display: flex;
+    max-width: 300px;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.footer2-servicios{
+    padding-bottom: 30px;
+}
+.footer3{
+    padding-top: 50px;
+    display: flex;
+    max-width: 300px;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-left: 30px;
+}
+.footer3-visitanos{
+    padding-bottom: 30px;
+}
+.antes-de-footer1 img{
+    width: 20px;
+}
+.antes-de-footer1{
+    background-color: rgb( 206,32,38 );
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+.telefono{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.carta-simb{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);
+    margin: 20px;
+    padding: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    
+}
+.carta-simb a{
+    text-decoration: none;
+    color:white;
+}
+.hora-simb{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+/* -------------------------- FOOTER ---------------------- */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+/* -------------------------------------------- page sobre nosotros------------------------------------- */
+.nosotros-experiencia{
+padding-top: 100px;
+padding-bottom: 100px;
+}
+.nosotros-experiencia img {
+    width: 250px;
+    height: 150px;
+}
+.nosotros-experiencia h2 {
+    text-align: center;
+    padding-bottom: 70px;
+}
+.nosotros-parrafo{
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    text-align: center;
+}
+.nosotros-parrafo p{
+    padding-bottom: 20px;
+}
+.nosotros-parrafo span{
+    padding-bottom: 20px;
+}
+.nosotros-parrafo a{
+    background-color:rgb( 206,32,38 );
+    padding-top: 10px;
+    text-decoration: none;
+    color: black;
+    max-width: 150px;
+}
+.nosotros-principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nosotros-imagenes{
+    display: flex;
+    flex-direction: column;
+}
+.nosotros-imagenes img{
+    padding-bottom:  10px;
+}
+/* --------------------------- page servicios-------------------- */
+.que-servicios-necesitas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.que-servicios-necesitas p{
+    max-width: 800px;
+    padding-top: 20px;
+    text-align: center;
+}
+.servicios-completos img {
+    height: 60px;
+    width: 60px;
+}
+.parte1{
+    display: flex;
+    padding-bottom: 100px;
+    justify-content: space-evenly;
+}
+.parte1 p{
+    max-width: 300px;
+}
+.martillo-llave{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.revision-simb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aceite-simb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.parte2{
+    display: flex;
+    padding-bottom: 100px;
+    justify-content: space-evenly;
+    
+}
+.parte2 p{
+    max-width: 300px;
+}
+.remolque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.neumaticos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bateria{display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactanos{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.contactanos a{
+    text-decoration: none;
+    color: white;
+    background-color:rgb( 206,32,38 );
+    padding: 10px;
+}
+
+/* -----------------------------------------page seguros------------------------------- */
+.titulo-seguros{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.parte3{
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.parte4{
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+/* --------------------------------- page contacto--------------------- */
+.titulo-contacto{
+    text-align: center;
+    padding-top: 120px;
+}
+.maps {
+    text-align: center;
+    background-color: rgb(212, 208, 208);
+}
+
+.formulario {
+    padding-top: 80px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+padding-bottom: 80px;
+}
+.form{
+    display: flex;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.info{
+
+    flex-direction: column;
+}
