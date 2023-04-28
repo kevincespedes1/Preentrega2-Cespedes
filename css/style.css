@@ -15,6 +15,10 @@ header {
     background-color: #e3e3e3;
 }
 
+.navbar-collapse {
+    text-align: center;
+}
+
 .menu-de-todos {
     background-image: linear-gradient(to top, #a7a4a2, #585858);
 }
@@ -103,29 +107,13 @@ header {
     transform: translate(-100%);
 }
 
-/* .link a:after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 5px;
-    width: 100%;
-    background-color: #891519; */
-/*animacion de derecha a izquierda*/
-/* transform-origin: right;
-    transform: scaleX(0);
-    transition: transform 0.5s ease-in-out;
-  } */
-
-/* .link a:hover:after { */
-/*animacion de derecha a izquierda*/
-/* transform-origin: left;
-    transform: scaleX(1);
-  } */
-
 .container-fluid {
     align-items: center;
+}
+
+.menu-bot {
+    border: 4px black dotted;
+    background-color: #891519;
 }
 
 /* -----------------------MAIN--------------------- */
@@ -245,6 +233,11 @@ header {
 .que-ofrecemos img {
     width: 50px;
     height: 50px;
+}
+
+.ubicacion .ubicacion-index {
+    width: 100px;
+    height: 80px;
 }
 
 .ubicacion {
@@ -410,6 +403,7 @@ header {
     background-color: black;
     color: white;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 /* -------------------------------------------- page sobre nosotros------------------------------------- */
@@ -609,6 +603,7 @@ header {
 .titulo-contacto {
     text-align: center;
     padding-top: 120px;
+    text-decoration: underline #585858;
 }
 
 .maps {
@@ -626,6 +621,9 @@ header {
 
 .form {
     display: flex;
+    padding: 50px;
+    border: 10px rgb(61, 20, 20) dashed;
+
 }
 
 .form form {
@@ -637,12 +635,21 @@ header {
 }
 
 .info {
-
     flex-direction: column;
+    padding: 50px;
+    border: 10px dotted rgb(61, 20, 20);
 }
 
 .mapa {
     max-width: 100%;
+}
+
+.boton-envi {
+    background-color: rgb(206, 32, 38);
+    color: white;
+    font-size: 14px;
+    padding: 10px 50px 10px 50px;
+    margin-top: 10px;
 }
 
 /* ---------------------------------------MQ------------------------------------------------------- */
@@ -688,7 +695,7 @@ header {
     /* ------------------------------------------page contacto------------ */
     .mapa {
         height: 400px;
-        width: 50%;
+        width: 80%;
         padding-bottom: 20px;
     }
 }
@@ -759,3 +766,664 @@ header {
         width: 180px;
     }
 }
+
+/* ------------- MAXIMO 768 PX ----------------------- */
+@media (max-width: 768px) {
+
+    /* ----------------index----------------------- */
+    .titulo-arriba {
+        font-size: 20px;
+    }
+
+    .container-fluid {
+        flex-direction: column;
+    }
+
+    .menu-bot {
+        margin-bottom: 15px;
+    }
+
+    .marcas-calidad img {
+        padding-top: 40px;
+        width: 350px;
+        height: 250px;
+    }
+
+    .titulo-secundario {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding-top: 58px;
+        padding-bottom: 66px;
+    }
+
+    .titulo-secundario h2 {
+        font-size: 40px;
+        font-weight: 850;
+    }
+
+    .titulo-secundario h3 {
+        font-size: 30px;
+        font-weight: 650;
+    }
+
+    .titulo-mecanica {
+        font-size: 15px;
+    }
+
+    .titulo-mecanica-index span {
+        font-size: 13px;
+    }
+
+    .titulo-accesorios {
+        font-size: 15px;
+    }
+
+    .titulo-accesorios-index span {
+        font-size: 13px;
+    }
+
+    .titulo-reparacion {
+        font-size: 15px;
+    }
+
+    .titulo-reparacion-index span {
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .titulo-te-ofrecemos {
+        padding: 80px;
+        margin: 0;
+    }
+
+    .titulo-te-ofrecemos h3 {
+        font-size: 25px;
+        font-weight: 700px;
+        padding-bottom: 15px;
+    }
+
+    .titulo-te-ofrecemos p {
+        font-size: 18px;
+    }
+
+    .ubicacion {
+        max-width: 600px;
+    }
+
+    .ubicacion p {
+        max-width: 600px;
+    }
+
+    .que-ofrecemos {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .que-ofrecemos img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .pesos {
+        max-width: 600px;
+    }
+
+    .pesos p {
+        max-width: 600px;
+    }
+
+    .estrella {
+        max-width: 600px;
+    }
+
+    .estrella p {
+        max-width: 600px;
+    }
+
+    .marcas-calidad {
+        text-align: center;
+        padding-top: 28px;
+        padding-bottom: 26px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .telefono {
+        padding-right: 0px;
+    }
+
+    .carta-simb {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .carta-simb {
+        padding-left: 20px;
+    }
+
+    .footer1 {
+        padding-top: 0px;
+        max-width: 300px;
+        padding-left: 50px;
+        padding-right: 40px;
+    }
+
+    .footer2 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 20px;
+        margin-left: 40px;
+    }
+
+    /* -------------------------------page sobre nosotros---------------------------- */
+    .grid-padre {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .arriba1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .arriba1 img {
+        margin: 6px;
+    }
+
+    .izquierda1 {
+        padding-right: 100px;
+        padding-bottom: 20px;
+    }
+
+    .izquierda1 img {
+        padding-left: 0px;
+        margin-top: 10px;
+        margin-left: 80px;
+    }
+
+    .nosotros-parrafo {
+        padding-bottom: 30px;
+    }
+
+    .derecha1 {
+        padding-right: 100px;
+        padding-bottom: 20px;
+    }
+
+    .derecha1 img {
+        padding-left: 0px;
+        margin-top: 10px;
+        margin-left: 80px;
+    }
+
+    .abajo1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .abajo1 img {
+        margin: 6px;
+    }
+
+    /* -----------------------page servicios ------------------------------- */
+    .servicios-completos img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .que-servicios-necesitas {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .que-servicios-necesitas p {
+        max-width: 580px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .parte1 {
+        text-align: center;
+        padding-bottom: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .parte1 p {
+        margin-top: 10px;
+        max-width: 580px;
+    }
+
+    .parte2 {
+        text-align: center;
+        padding-bottom: 30px;
+        flex-direction: column;
+    }
+
+    .parte2 p {
+        margin-top: 10px;
+        max-width: 580px;
+    }
+
+    /* ----------------------page seguros----------------------- */
+    .parte3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .parte3 img {
+        width: 350px;
+        height: 200px;
+    }
+
+    .parte4 {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .parte4 img {
+        width: 350px;
+        height: 200px;
+    }
+
+    /* --------------------- PAGE CONTACTO---------------- */
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .info {
+        padding: 10px;
+        border: 10px dotted rgb(61, 20, 20);
+        margin-bottom: 80px;
+    }
+
+    .form {
+        padding: 10px;
+    }
+
+    .formulario {
+        flex-direction: column;
+    }
+
+    .mapa {
+        height: 400px;
+        width: 80%;
+        padding-bottom: 40px;
+    }
+}
+
+/* ---------------------MAXIMO 425 PX---------------------- */
+
+@media (max-width: 425px) {
+    .servicios-index {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    .titulo-accesorios-index {
+        border-top: 2px solid rgb(255, 255, 255);
+        border-bottom: 2px solid rgb(255, 255, 255);
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .titulo-mecanica-index .titulo-mecanica {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .titulo-mecanica-index span {
+        font-size: 15px;
+    }
+
+    .titulo-accesorios-index .titulo-accesorios {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .titulo-accesorios-index span {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .titulo-reparacion-index .titulo-reparacion {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .titulo-reparacion-index span {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .ven-visitanos {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .visitanos {
+        padding-top: 20px;
+
+    }
+
+    .ven-visitanos img {
+        width: 300px;
+        height: 250px;
+        margin: 0;
+    }
+
+    .titulo-te-ofrecemos {
+        padding: 25px;
+    }
+
+    .ubicacion p {
+        max-width: 350px;
+    }
+
+    .pesos p {
+        max-width: 350px;
+    }
+
+    .estrella p {
+        max-width: 350px;
+    }
+
+    .que-ofrecemos {
+        padding: 0;
+    }
+
+    .antes-de-footer1 {
+        flex-direction: column;
+    }
+
+    .telefono {
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
+    .telefono div {
+        margin-bottom: 10px;
+    }
+
+    .carta-simb {
+        border-right: 0px;
+        border-left: 0px;
+        border-top: 2px solid rgb(255, 255, 255);
+        border-bottom: 2px solid rgb(255, 255, 255);
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .carta-simb div {
+        margin-bottom: 10px;
+    }
+
+    .hora-simb {
+        padding-top: 0px;
+    }
+
+    .hora-simb div {
+        margin-bottom: 10px;
+    }
+
+    .antes-de-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer1-experiencia {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .footer1 {
+        padding: 15px;
+        max-width: 350px;
+        text-align: center;
+        border-bottom: 1px white solid;
+    }
+
+    .footer2 {
+        border-bottom: 1px white solid;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin: 0px;
+        max-width: 350px;
+    }
+
+    .footer3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 0px;
+    }
+
+    .footer3-visitanos {
+        text-align: center;
+    }
+
+    /* ---------------------------- PAGE SOBRE NOSOTROS-------------- */
+    .arriba1 img {
+        height: 280px;
+        width: 370px;
+        padding: 0;
+        margin: 5px;
+    }
+
+    .arriba1 {
+        padding-left: 0px;
+    }
+
+    .izquierda1 img {
+        height: 280px;
+        width: 370px;
+        margin-left: 0px;
+    }
+
+    .izquierda1 {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .nosotros-parrafo {
+        max-width: 340px;
+    }
+
+    .derecha1 {
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 30px;
+    }
+
+    .derecha1 img {
+        height: 280px;
+        width: 370px;
+        margin-left: 0px;
+    }
+
+    .abajo1 img {
+        height: 280px;
+        width: 370px;
+
+    }
+
+    /* -----------------------PAGE SERVICIOS--------------- */
+    .que-servicios-necesitas p {
+        max-width: 380px;
+    }
+
+    .parte1 p {
+        max-width: 380px;
+    }
+
+    .parte2 p {
+        max-width: 380px;
+    }
+}
+
+/* ------------MAXIMO 375 PX ------------------ */
+@media (max-width: 375px) {
+
+    /* ---------------page sobre nosotros------------- */
+    .nosotros-experiencia h2 {
+        max-width: 370px;
+    }
+
+    .arriba1 img {
+        height: 220px;
+        width: 320px;
+    }
+
+    .izquierda1 {
+        padding-left: 20px;
+    }
+
+    .izquierda1 img {
+        height: 220px;
+        width: 320px;
+        margin-left: 10px;
+    }
+
+    .derecha1 img {
+        height: 220px;
+        width: 320px;
+        margin-left: 10px;
+    }
+
+    .derecha1 {
+        padding-left: 20px;
+    }
+
+    .abajo1 img {
+        height: 220px;
+        width: 320px;
+        margin-left: 10px;
+    }
+
+    /* ------------------------- PAGE SEGUROS ------------------- */
+    .titulo-seguros {
+        max-width: 360px;
+    }
+}
+
+    /* ------------------MAXIMO 320PX --------------- */
+ @media (max-width: 320px){ 
+
+        /* --------------------- PAGE INDEX----------- */
+         .ven-visitanos img {
+            width: 250px;
+            height: 200px;
+        }
+
+        .marcas-calidad h3 {
+            max-width: 280px;
+        }
+
+        .marcas-calidad img {
+            width: 250px;
+            height: 200px;
+        } 
+
+        /* --------------------- PAGE SOBRE NOSOTROS --------------------*/
+         .arriba1 img {
+            width: 250px;
+            height: 200px;
+        }
+
+        .izquierda1 img {
+            width: 250px;
+            height: 200px;
+            margin-left: 0px;
+        }
+
+        .izquierda1 {
+            padding-left: 30px;
+        }
+
+        .derecha1 img {
+            width: 250px;
+            height: 200px;
+            margin-left: 20px;
+        }
+
+        .abajo1 img {
+            width: 250px;
+            height: 200px;
+        }
+
+        .nosotros-parrafo p {
+            max-width: 280px;
+        }
+
+        .nosotros-parrafo span {
+            max-width: 280px;
+        }
+
+        .abajo1 img {
+            margin-left: 0px;
+            margin-right: 0px;
+        } 
+
+        /* ---------------------- PAGE SERVICIOS -------------- */
+        h2 {
+            text-align: center;
+        }
+
+        .parte1 p {
+            max-width: 280px;
+        }
+
+        .parte2 p {
+            max-width: 280px;
+        }
+
+        .parte3 img {
+            width: 250px;
+            height: 200px;
+        }
+
+        .parte4 img {
+            width: 250px;
+            height: 200px;
+        } 
+
+        /* -------------------- PAGE CONTACTO ---------------- */
+         h1 {
+            font-size: 25px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        .info {
+            padding: 10px;
+            border: 5px dotted rgb(61, 20, 20);
+        }
+
+        .form {
+            border: 5px rgb(61, 20, 20) dashed;
+        } 
+    }
